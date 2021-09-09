@@ -1,0 +1,32 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function okno_zamknij_zaskorska()
+ {
+ window.close()
+ }
+ </script>
+ </head>
+<body>
+		<p>W 1995 roku,JavaScript jest przede wszystkim językiem skryptowym – to znaczy interpretowanym
+		wszelkie odwołania do funkcji i obiektów wykonywane są w trakcie wykonywania programu,
+		Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone
+		uprawnienia dostępu do zasobów komputera,</p><br>
+
+		<p>< input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"><br>
+		komenda ta odpowiada za wyświetlenie przycisku o nazwie Nowa strona <br><br>
+		window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");<br>
+		komenda ta otwiera nową strone o nazwie obraz.html gdzie:<br>
+		toolbar=no --> oznacza wartość no : ukrywa standardowy pasek narzędzi <br>
+		directories=no, --> oznacza wartość no : ukrywa przyciski katalogów<br>
+		menubar=no --> oznacza wartość no:ukrywa menu przeglądarki<br>
+		height=280, --> oznacza wartość w pixelach: ustawia wysokość okna<br>
+		width=160, --> oznacza wartość w pixelach: ustawia szerokość okna<br>
+		top=200, --> oznacza wartość w pixelach : ustawia położenie okna względem góry ekranu<br>
+		left=2000, --> oznacza wartość w pixelach : ustawia położenie okna względem lewej strony ekranu<br>
+	<br> window.close()<br>
+		komenda odpowiada za zamknięcie strony</p>
+ <img src="obraz1.gif" />
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_zaskorska()"/>
+</body>
+</html>
