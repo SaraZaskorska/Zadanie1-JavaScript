@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>
+obiczanie pola i obwodu prostokata
+</title>
+ <script language="JavaScript">
+function Pole_Zaskorska(a,b)
+{
+ a_dana_zas=parseFloat(a)
+ b_dana_zas=parseFloat(b)
+ wynik_zas=a*b
+ document.getElementsByName('pole')[0].value=wynik_zas.toFixed(2); /* na dokument */
+ alert("Pole="+wynik_zas.toFixed(2)); /*do okna Alert */
+ pokaz1.innerHTML="pole="+wynik_zas.toFixed(2)+"<br>";  /* do tabeli */
+}
+function Obwod_zaskorska(a,b)
+{
+ a_dana_zas=parseFloat(a)
+ b_dana_zas=parseFloat(b)
+ wynik_zas=2*a + 2*b
+ document.getElementsByName('obw')[0].value=wynik_zas.toFixed(2);
+ alert("Obwód="+wynik_zas.toFixed(2));
+ pokaz2.innerHTML="obwod="+wynik_zas.toFixed(2)+"cm";
+}
+ </script>
+</head>
+<body>
+Obliczanie pola i obwodu prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="Pole_Zaskorska(this.wysokosc.value,this.szerokosc.value);
+Obwod_zaskorska(this.wysokosc.value,this.szerokosc.value);return false">
+Podaj a=
+<input size="6" name="wysokosc">
+Podaj b=
+<input size="6" name="szerokosc">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+pole=
+<input size="6" name="pole">
+obwod=
+<input size="6" name="obw">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
