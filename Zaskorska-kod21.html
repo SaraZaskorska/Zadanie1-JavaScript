@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            textarea{
+                width: 800px;
+            height: 850px;
+            }
+            </style>
+    </head>
+    <body>
+        <textarea>
+            <html>
+                <head>
+                <title>
+                    Obliczanie dlugosci drabiny i kata jej nachylenia
+                </title>
+                 <script language="JavaScript">
+                function Drabina(d,x)
+                {
+                 a_dana_zas=parseFloat(d)
+                 b_dana_zas=parseFloat(x)
+                 wynik_zas=Math.pow(d,2) + Math.pow(x,2)
+                 wynik_zas1=Math.sqrt(wynik_zas)
+                 document.getElementsByName('pole')[0].value=wynik_zas1.toFixed(2); /* na dokument */
+                 alert("Dlugosc="+wynik_zas1.toFixed(2)); /*do okna Alert */
+                 pokaz1.innerHTML="Dlugosc="+wynik_zas1.toFixed(2)+"<br>";  /* do tabeli */
+                }
+                function KatAlfa(a,b)
+                {
+                 a_dana_zas=parseFloat(a)
+                 b_dana_zas=parseFloat(b)
+                 radiany = Math.atan2(a, b);
+                wynik_zas = radiany * (180/Math.PI);
+                 document.getElementsByName('obw')[0].value=wynik_zas.toFixed(2);
+                 alert("Kat nachylenia="+wynik_zas.toFixed(2));
+                 pokaz2.innerHTML="Kat nachylenia="+wynik_zas.toFixed(2)+"cm";
+                }
+                 </script>
+                </head>
+                <body>
+                Obliczanie dlugosci drabiny i kata jej nachylenia
+                <br> <br>
+                <form name="formularz" action="..." onsubmit="Drabina(this.wysokosc.value,this.szerokosc.value);
+                KatAlfa(this.wysokosc.value,this.szerokosc.value);return false">
+                Podaj d=
+                <input size="6" name="wysokosc">
+                Podaj x=
+                <input size="6" name="szerokosc">
+                <br>
+                <br>
+                <input TYPE="submit" Value="oblicz" >
+                <br>
+                <br>
+                dlugosc=
+                <input size="6" name="pole">
+                kat nachylenia=
+                <input size="6" name="obw">
+                </form>
+                <table>
+                <tr id="pokaz1"></tr>
+                <tr id="pokaz2"></tr>
+                </table>
+                </body>
+                </html>
+        </textarea>
+    </body>
+</html>
