@@ -1,0 +1,41 @@
+<html>
+<body>
+<div style="color:rgb(79, 35, 119);font-size:25px;">
+ <script language="JavaScript">
+var a=prompt("podaj swoje nazwisko=");
+
+var b=prompt("podaj swoje imie=");
+var c= a.length%4+5;
+var d= b.length%6+20;
+
+ for(i=0; i<d; i++)
+ 
+document.write("*");
+document.write("*");
+document.write("<br>");
+ 
+ for(i=0; i< c; i++)
+ {
+for(j=0; j< d; j++)
+ {
+if(j == 0)
+document.write("*");
+else
+{
+    document.write("&ensp;");
+}
+if(j == d-1)
+document.write("*")
+ }
+ document.write("<br>");
+ }
+ for(i = 0; i < d; i++)
+ 
+     document.write("*");
+     document.write("*");
+     document.write("<br>");
+ 
+ </script>
+</div>
+</body>
+</html>
