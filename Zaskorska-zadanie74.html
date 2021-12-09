@@ -1,0 +1,23 @@
+<html>
+    <head>
+    <meta charset="Utf-8">
+    </head>
+    <body>
+        <script language="JavaScript">
+            for (var i=30; i<=45; i++)
+             {
+                 var pierwiastek_2 = Math.sqrt(i);
+                 var pierwiastek_4 = Math.sqrt(pierwiastek_2);
+                    pierwiastek_2=pierwiastek_2.toFixed(2);
+                    pierwiastek_4=pierwiastek_4.toFixed(2);
+
+                document.write("I="+i+ " pierw_2("+i+")= "+pierwiastek_2+"     pierw_4("+i+")="+pierwiastek_4);
+                document.write("<br/>");
+                if(i%3==0){
+                    confirm(i);
+                }
+            }
+    
+            </script>
+    </body>
+</html>
